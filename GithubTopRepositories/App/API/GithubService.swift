@@ -1,5 +1,5 @@
 //
-//  RepositoryServices.swift
+//  GithubService.swift
 //  GithubTopRepositories
 //
 //  Created by Bryan A Bolivar M on 12/7/18.

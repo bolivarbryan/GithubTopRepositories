@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		4286BF9D26185CC4CCFE2644 /* Pods_GithubTopRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC2265D480ECF42F6DD6689 /* Pods_GithubTopRepositories.framework */; };
 		F46611D221BA742B006E3DA6 /* RepositoriesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46611D121BA742B006E3DA6 /* RepositoriesList.storyboard */; };
-		F46611D521BA78B6006E3DA6 /* RepositoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D421BA78B6006E3DA6 /* RepositoryServices.swift */; };
+		F46611D521BA78B6006E3DA6 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D421BA78B6006E3DA6 /* GithubService.swift */; };
+		F46611D721BA7AEB006E3DA6 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D621BA7AEB006E3DA6 /* RepositoriesListViewModel.swift */; };
+		F46611D921BA7C8D006E3DA6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D821BA7C8D006E3DA6 /* Repository.swift */; };
+		F4976E6021BA87D2008D8C25 /* GithubTopRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */; };
+		F4976E6921BA8802008D8C25 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E6821BA8802008D8C25 /* RepositoryTests.swift */; };
 		F4CF5E0921BA6C0C00D28F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF5E0821BA6C0C00D28F5F /* AppDelegate.swift */; };
-		F4CF5E0B21BA6C0C00D28F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF5E0A21BA6C0C00D28F5F /* ViewController.swift */; };
 		F4CF5E1021BA6C0D00D28F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5E0F21BA6C0D00D28F5F /* Assets.xcassets */; };
 		F4CF5E1321BA6C0D00D28F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5E1121BA6C0D00D28F5F /* LaunchScreen.storyboard */; };
 		F4CF5E2321BA6E0400D28F5F /* RepositoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF5E2221BA6E0400D28F5F /* RepositoriesListViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4976E6221BA87D2008D8C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CF5DFD21BA6C0C00D28F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CF5E0421BA6C0C00D28F5F;
+			remoteInfo = GithubTopRepositories;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		97D6AE323686134C78C5A94B /* Pods-GithubTopRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubTopRepositories.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubTopRepositories/Pods-GithubTopRepositories.release.xcconfig"; sourceTree = "<group>"; };
 		CBC2265D480ECF42F6DD6689 /* Pods_GithubTopRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubTopRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0521BD5258CDE0B26B08A22 /* Pods-GithubTopRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubTopRepositories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubTopRepositories/Pods-GithubTopRepositories.debug.xcconfig"; sourceTree = "<group>"; };
 		F46611D121BA742B006E3DA6 /* RepositoriesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepositoriesList.storyboard; sourceTree = "<group>"; };
-		F46611D421BA78B6006E3DA6 /* RepositoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServices.swift; sourceTree = "<group>"; };
+		F46611D421BA78B6006E3DA6 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
+		F46611D621BA7AEB006E3DA6 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		F46611D821BA7C8D006E3DA6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F4976E5D21BA87D2008D8C25 /* GithubTopRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubTopRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTopRepositoriesTests.swift; sourceTree = "<group>"; };
+		F4976E6121BA87D2008D8C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4976E6821BA8802008D8C25 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		F4CF5E0521BA6C0C00D28F5F /* GithubTopRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubTopRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CF5E0821BA6C0C00D28F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4CF5E0A21BA6C0C00D28F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4CF5E0F21BA6C0D00D28F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4CF5E1221BA6C0D00D28F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CF5E1421BA6C0D00D28F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F4976E5A21BA87D2008D8C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4CF5E0221BA6C0C00D28F5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,15 +89,34 @@
 		F46611D321BA78A3006E3DA6 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				F46611D421BA78B6006E3DA6 /* RepositoryServices.swift */,
+				F46611D421BA78B6006E3DA6 /* GithubService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F4976E5E21BA87D2008D8C25 /* GithubTopRepositoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4976E6721BA87E2008D8C25 /* Models */,
+				F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */,
+				F4976E6121BA87D2008D8C25 /* Info.plist */,
+			);
+			path = GithubTopRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		F4976E6721BA87E2008D8C25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4976E6821BA8802008D8C25 /* RepositoryTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F4CF5DFC21BA6C0C00D28F5F = {
 			isa = PBXGroup;
 			children = (
 				F4CF5E0721BA6C0C00D28F5F /* GithubTopRepositories */,
+				F4976E5E21BA87D2008D8C25 /* GithubTopRepositoriesTests */,
 				F4CF5E0621BA6C0C00D28F5F /* Products */,
 				0854E7ED57C7EF12F1F17FD8 /* Pods */,
 				13F1F0508CAFCFB37D86617D /* Frameworks */,
@@ -83,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CF5E0521BA6C0C00D28F5F /* GithubTopRepositories.app */,
+				F4976E5D21BA87D2008D8C25 /* GithubTopRepositoriesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				F4CF5E1C21BA6D5C00D28F5F /* App */,
-				F4CF5E0A21BA6C0C00D28F5F /* ViewController.swift */,
 				F4CF5E0F21BA6C0D00D28F5F /* Assets.xcassets */,
 				F4CF5E1121BA6C0D00D28F5F /* LaunchScreen.storyboard */,
 				F4CF5E1421BA6C0D00D28F5F /* Info.plist */,
@@ -131,6 +175,7 @@
 		F4CF5E1F21BA6D9600D28F5F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F46611D621BA7AEB006E3DA6 /* RepositoriesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +191,7 @@
 		F4CF5E2121BA6DA800D28F5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F46611D821BA7C8D006E3DA6 /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +199,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F4976E5C21BA87D2008D8C25 /* GithubTopRepositoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4976E6421BA87D2008D8C25 /* Build configuration list for PBXNativeTarget "GithubTopRepositoriesTests" */;
+			buildPhases = (
+				F4976E5921BA87D2008D8C25 /* Sources */,
+				F4976E5A21BA87D2008D8C25 /* Frameworks */,
+				F4976E5B21BA87D2008D8C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4976E6321BA87D2008D8C25 /* PBXTargetDependency */,
+			);
+			name = GithubTopRepositoriesTests;
+			productName = GithubTopRepositoriesTests;
+			productReference = F4976E5D21BA87D2008D8C25 /* GithubTopRepositoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F4CF5E0421BA6C0C00D28F5F /* GithubTopRepositories */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4CF5E1721BA6C0D00D28F5F /* Build configuration list for PBXNativeTarget "GithubTopRepositories" */;
@@ -182,6 +246,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Dev;
 				TargetAttributes = {
+					F4976E5C21BA87D2008D8C25 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4CF5E0421BA6C0C00D28F5F;
+					};
 					F4CF5E0421BA6C0C00D28F5F = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -201,11 +269,19 @@
 			projectRoot = "";
 			targets = (
 				F4CF5E0421BA6C0C00D28F5F /* GithubTopRepositories */,
+				F4976E5C21BA87D2008D8C25 /* GithubTopRepositoriesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F4976E5B21BA87D2008D8C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4CF5E0321BA6C0C00D28F5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +305,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -236,6 +313,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,18 +342,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F4976E5921BA87D2008D8C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4976E6021BA87D2008D8C25 /* GithubTopRepositoriesTests.swift in Sources */,
+				F4976E6921BA8802008D8C25 /* RepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4CF5E0121BA6C0C00D28F5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4CF5E2321BA6E0400D28F5F /* RepositoriesListViewController.swift in Sources */,
-				F46611D521BA78B6006E3DA6 /* RepositoryServices.swift in Sources */,
-				F4CF5E0B21BA6C0C00D28F5F /* ViewController.swift in Sources */,
+				F46611D721BA7AEB006E3DA6 /* RepositoriesListViewModel.swift in Sources */,
+				F46611D521BA78B6006E3DA6 /* GithubService.swift in Sources */,
 				F4CF5E0921BA6C0C00D28F5F /* AppDelegate.swift in Sources */,
+				F46611D921BA7C8D006E3DA6 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4976E6321BA87D2008D8C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CF5E0421BA6C0C00D28F5F /* GithubTopRepositories */;
+			targetProxy = F4976E6221BA87D2008D8C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4CF5E1121BA6C0D00D28F5F /* LaunchScreen.storyboard */ = {
@@ -289,6 +385,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F4976E6521BA87D2008D8C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = GithubTopRepositoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KMApp.GithubTopRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubTopRepositories.app/GithubTopRepositories";
+			};
+			name = Debug;
+		};
+		F4976E6621BA87D2008D8C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = GithubTopRepositoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KMApp.GithubTopRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubTopRepositories.app/GithubTopRepositories";
+			};
+			name = Release;
+		};
 		F4CF5E1521BA6C0D00D28F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,7 +550,10 @@
 				DEVELOPMENT_TEAM = K87XPR878Y;
 				INFOPLIST_FILE = GithubTopRepositories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KMApp.GithubTopRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -431,7 +570,10 @@
 				DEVELOPMENT_TEAM = K87XPR878Y;
 				INFOPLIST_FILE = GithubTopRepositories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KMApp.GithubTopRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -442,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F4976E6421BA87D2008D8C25 /* Build configuration list for PBXNativeTarget "GithubTopRepositoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4976E6521BA87D2008D8C25 /* Debug */,
+				F4976E6621BA87D2008D8C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4CF5E0021BA6C0C00D28F5F /* Build configuration list for PBXProject "GithubTopRepositories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
