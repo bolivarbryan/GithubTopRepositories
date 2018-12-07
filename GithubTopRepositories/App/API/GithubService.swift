@@ -11,6 +11,7 @@ import Moya
 
 enum GithubService {
     case mostPopularRepos(q: String, order: String, sort: String)
+    case repository(id: Int)
 }
 
 extension GithubService: TargetType {
@@ -20,12 +21,14 @@ extension GithubService: TargetType {
         switch self {
         case .mostPopularRepos:
             return "/search/repositories"
+        case .repository:
+            return ""
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .mostPopularRepos:
+        case .mostPopularRepos, .repository:
             return .get
         }
     }
@@ -34,12 +37,16 @@ extension GithubService: TargetType {
         switch self {
         case .mostPopularRepos(let q, let order, let sort):
             return .requestParameters(parameters: ["q": q, "order": order, "sort": sort], encoding: URLEncoding.default)
+        case .repository(let id):
+            return .requestParameters(parameters: ["id": id], encoding: URLEncoding.default)
         }
     }
 
     var sampleData: Data {
         switch self {
         case .mostPopularRepos:
+            return "{}".utf8Encoded
+        case .repository:
             return "{}".utf8Encoded
         }
     }

@@ -10,7 +10,8 @@ target 'GithubTopRepositories' do
   pod 'RxSwift'
   pod 'RxCocoa',    '~> 4.0'
   pod 'Moya'
-
+  pod 'Kingfisher'
+  
 end
 
 post_install do |installer|

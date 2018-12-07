@@ -14,6 +14,7 @@ class RepositoriesListViewModel {
 
     let provider = MoyaProvider<GithubService>()
     let repositories: Variable<[Repository]> = Variable([])
+    var selectedItem: Repository?
 
     @objc func fetchTopRepositories() {
         provider.request(.mostPopularRepos(q: "stars:>1", order: "desc", sort: "stars")) { result in

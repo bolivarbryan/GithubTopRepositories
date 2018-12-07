@@ -13,11 +13,11 @@ import RxCocoa
 class RepositoriesListViewController: UIViewController {
 
     //MARK: - Properties
-
-    let viewModel = RepositoriesListViewModel()
-    let disposeBag = DisposeBag()
-    let cellIdentifier = "cellIdentifier"
-    let refreshControl = UIRefreshControl()
+    fileprivate static let detailsSegueIdentifier = "RepositoryDetailsSegue"
+    fileprivate let cellIdentifier = "cellIdentifier"
+    fileprivate let viewModel = RepositoriesListViewModel()
+    fileprivate let disposeBag = DisposeBag()
+    fileprivate let refreshControl = UIRefreshControl()
 
     @IBOutlet weak var repositoriesTableView: UITableView! {
         didSet {
@@ -35,6 +35,15 @@ class RepositoriesListViewController: UIViewController {
         viewModel.fetchTopRepositories()
     }
 
+     // MARK: - Navigation
+
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? RepositoryDetailsViewController {
+            vc.item = viewModel.selectedItem
+        }
+     }
+
     //MARK: Functions
 
     @objc func fetchRepositories() {
@@ -45,8 +54,8 @@ class RepositoriesListViewController: UIViewController {
         viewModel.repositories.asObservable()
             .bind(to: repositoriesTableView.rx.items(cellIdentifier: cellIdentifier,
                                          cellType: UITableViewCell.self)) { index, model, cell in
-                                            cell.textLabel?.text = model.name
-                                            cell.detailTextLabel?.text = model.language
+                                            cell.textLabel?.text = model.repositoryName
+                                            cell.detailTextLabel?.text = model.repositoryLanguage
             }
             .disposed(by: disposeBag)
 
@@ -55,6 +64,12 @@ class RepositoriesListViewController: UIViewController {
                 self?.refreshControl.endRefreshing()
             })
             .disposed(by: disposeBag)
+
+        repositoriesTableView.rx.modelSelected(Repository.self)
+            .subscribe(onNext: { [weak self] model in
+                self?.viewModel.selectedItem = model
+                self?.performSegue(withIdentifier: RepositoriesListViewController.detailsSegueIdentifier, sender: self)
+            })
+        .disposed(by: disposeBag)
     }
 }
-

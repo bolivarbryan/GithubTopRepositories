@@ -12,8 +12,9 @@
 		F46611D521BA78B6006E3DA6 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D421BA78B6006E3DA6 /* GithubService.swift */; };
 		F46611D721BA7AEB006E3DA6 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D621BA7AEB006E3DA6 /* RepositoriesListViewModel.swift */; };
 		F46611D921BA7C8D006E3DA6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46611D821BA7C8D006E3DA6 /* Repository.swift */; };
-		F4976E6021BA87D2008D8C25 /* GithubTopRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */; };
 		F4976E6921BA8802008D8C25 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E6821BA8802008D8C25 /* RepositoryTests.swift */; };
+		F4976E6B21BAA283008D8C25 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E6A21BAA283008D8C25 /* RepositoryDetailsViewController.swift */; };
+		F4976E6D21BAAD3A008D8C25 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4976E6C21BAAD3A008D8C25 /* Owner.swift */; };
 		F4CF5E0921BA6C0C00D28F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF5E0821BA6C0C00D28F5F /* AppDelegate.swift */; };
 		F4CF5E1021BA6C0D00D28F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5E0F21BA6C0D00D28F5F /* Assets.xcassets */; };
 		F4CF5E1321BA6C0D00D28F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CF5E1121BA6C0D00D28F5F /* LaunchScreen.storyboard */; };
@@ -39,9 +40,10 @@
 		F46611D621BA7AEB006E3DA6 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
 		F46611D821BA7C8D006E3DA6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F4976E5D21BA87D2008D8C25 /* GithubTopRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubTopRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTopRepositoriesTests.swift; sourceTree = "<group>"; };
 		F4976E6121BA87D2008D8C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4976E6821BA8802008D8C25 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		F4976E6A21BAA283008D8C25 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		F4976E6C21BAAD3A008D8C25 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F4CF5E0521BA6C0C00D28F5F /* GithubTopRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubTopRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CF5E0821BA6C0C00D28F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CF5E0F21BA6C0D00D28F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				F4976E6721BA87E2008D8C25 /* Models */,
-				F4976E5F21BA87D2008D8C25 /* GithubTopRepositoriesTests.swift */,
 				F4976E6121BA87D2008D8C25 /* Info.plist */,
 			);
 			path = GithubTopRepositoriesTests;
@@ -184,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CF5E2221BA6E0400D28F5F /* RepositoriesListViewController.swift */,
+				F4976E6A21BAA283008D8C25 /* RepositoryDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F46611D821BA7C8D006E3DA6 /* Repository.swift */,
+				F4976E6C21BAAD3A008D8C25 /* Owner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GithubTopRepositories/Pods-GithubTopRepositories-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -311,6 +315,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -346,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4976E6021BA87D2008D8C25 /* GithubTopRepositoriesTests.swift in Sources */,
 				F4976E6921BA8802008D8C25 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +361,11 @@
 			files = (
 				F4CF5E2321BA6E0400D28F5F /* RepositoriesListViewController.swift in Sources */,
 				F46611D721BA7AEB006E3DA6 /* RepositoriesListViewModel.swift in Sources */,
+				F4976E6D21BAAD3A008D8C25 /* Owner.swift in Sources */,
 				F46611D521BA78B6006E3DA6 /* GithubService.swift in Sources */,
 				F4CF5E0921BA6C0C00D28F5F /* AppDelegate.swift in Sources */,
 				F46611D921BA7C8D006E3DA6 /* Repository.swift in Sources */,
+				F4976E6B21BAA283008D8C25 /* RepositoryDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

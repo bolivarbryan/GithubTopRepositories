@@ -19,7 +19,8 @@ class RepositoryTests: XCTestCase {
 
     func testInvalidRepositoryFormat() {
         // given
-        let item = Repository(id: 1, name: "freeCodeCamp", forks: 20590, language: "Swift")
+        let owner = Owner(login: "Bryan", avatarURL: "")
+        let item = Repository(id: 1, name: "freeCodeCamp", forks: 20590, language: "Swift", description: "hello world", stargazersCount: 0, owner:owner)
 
         let inputJSON = """
                         {
@@ -27,7 +28,13 @@ class RepositoryTests: XCTestCase {
                             {
                               "id": 1,
                               "name": "freeCodeCamp",
-                              "forks": 20590
+                              "forks": 20590,
+                              "description": "hello world",
+                              "stargazers_count": 0,
+                              "owner": {
+                                "login": "Bryan",
+                                "avatar_url": ""
+                              }
                             }
                           ]
                         }
